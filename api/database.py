@@ -18,7 +18,10 @@ if ENVIRONMENT == 'production':
     # LOCAL_DB_PATH = os.path.join(os.path.dirname(__file__), '../test_08_db.db')
     # Path to the database file in the /tmp directory
     # TMP_DB_PATH = '/tmp/test_08_db_2.db'
-    TMP_DB_PATH = '/tmp/test_08_db.db'
+    TMP_DB_PATH = 'test_08_db_2.db'
+    # TMP_DB_PATH = '/tmp/test_08_db_2.db'
+    
+    
     # TMP_DB_PATH = '/tmp/test_08_db_new_pp.db'
     # Copy the database file to /tmp if it doesn't already exist
     if not os.path.exists(TMP_DB_PATH):
@@ -26,12 +29,9 @@ if ENVIRONMENT == 'production':
     DATABASE_URL = f"sqlite:///{TMP_DB_PATH}"
 else:
     # Local development database path
-<<<<<<< HEAD
-    LOCAL_DB_PATH = os.path.join(os.path.dirname(__file__), '../test_08_db_new_pp(9).db')
-=======
+    # LOCAL_DB_PATH = os.path.join(os.path.dirname(__file__), '../test_08_db_new_pp(9).db')
     # LOCAL_DB_PATH = os.path.join(os.path.dirname(__file__), '../test_08_db_new_pp.db')
     LOCAL_DB_PATH = os.path.join(os.path.dirname(__file__), '../test_08_db_2.db')
->>>>>>> 9660ab4 (render_test_00_21_01 : update database)
     # LOCAL_DB_PATH = os.path.join(os.path.dirname(__file__), '../test_08_db.db')
     DATABASE_URL = f"sqlite:///{LOCAL_DB_PATH}"
 
