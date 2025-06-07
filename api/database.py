@@ -18,7 +18,7 @@ if ENVIRONMENT == 'production':
     # LOCAL_DB_PATH = os.path.join(os.path.dirname(__file__), '../test_08_db.db')
     # Path to the database file in the /tmp directory
     # TMP_DB_PATH = '/tmp/test_08_db_2.db'
-    TMP_DB_PATH = 'test_08_db_2.db'
+    TMP_DB_PATH = '../test_08_db_2.db'
     # TMP_DB_PATH = '/tmp/test_08_db_2.db'
     
     
